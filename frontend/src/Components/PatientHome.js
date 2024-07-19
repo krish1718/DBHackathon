@@ -11,23 +11,48 @@ function PatientHome() {
     { name: "Contact", routeAddr: "/contact" },
     { name: "Quiz", routeAddr: "/quiz" },
     { name: "Meditation", routeAddr: "/meditation" },
-    { name: "Solve My Confusion", routeAddr: "/confusion" }
+    { name: "Checklist", routeAddr: "/confusion" }
   ];
 
   return (
-    <div className='PatientContainer'>
-      <div className='upperContainer'>
+    <div className="PatientContainer">
+      <div className="upperContainer">
         <CarouselComponent />
       </div>
-      <div className='lowerContainer'>
-        <div className='gridButtons'>
+      <div className="lowerContainer" style={{ padding: "15px" }}>
+        <div className="gridButtons">
           {btnArray.map((item, index) => {
             return (
-              <button type='button' key={index} onClick={() => navigate(item.routeAddr)}>{item.name}</button>
+              <button
+                type="button"
+                key={index}
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bolder",
+                  backgroundColor: "teal",
+                  borderRadius: "10px",
+                  height:"80px"
+                }}
+                onClick={() => navigate(item.routeAddr)}
+              >
+                {item.name}
+              </button>
             );
           })}
         </div>
-        <button type="button">SOS</button>
+        <button
+          type="button"
+          style={{
+            fontSize: "40px",
+            fontWeight: "bolder",
+            backgroundColor: "red",
+            borderRadius: "500px",
+            width: "100px",
+            height:"100px"
+          }}
+        >
+          SOS
+        </button>
       </div>
     </div>
   );

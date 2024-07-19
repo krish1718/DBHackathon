@@ -64,7 +64,7 @@ function LogQuestionsDialog(
             PaperProps={{
                 sx: {
                     width: "100%",
-                    height: "100%",
+                    // height: "100%",
                     borderRadius: "16px"
                 }
             }}

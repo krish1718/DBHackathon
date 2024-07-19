@@ -4,7 +4,6 @@ html, body {
 }
 
 .GauravFullHeight {
-  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
   display: flex;
   flex-direction: column;
 }
@@ -18,15 +17,17 @@ html, body {
 }
 
 .GauravImage {
-  max-height: 200px;
+  max-height: 500px;
 }
 
 .GauravQuizContainer {
   border: none;
+  min-height: 100vh;
   background-image: url(../../public/personality-quiz.jpg);
 }
 
 .GauravQuizCard {
+  height: 500px;
   background-color: rgba(255, 255, 255, 0.7);
   max-width: 350px;
 }

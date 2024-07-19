@@ -9,7 +9,7 @@ const Quiz = () => {
     return (
         <section>
             <div className="container GauravQuizContainer">
-                <div className="row vh-100 align-items-center justify-content-center GauravFullHeight">
+                <div className="row align-items-center justify-content-center GauravFullHeight">
                     <div className="col-lg-8 GauravQuizCard">
                         <div className="card p-4 GauravCard">
                             <div className="d-flex flex-column justify-content-center align-items-center gap-md-3 h-100 GauravContent">

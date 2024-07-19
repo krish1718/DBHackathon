@@ -2,7 +2,7 @@ import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Button, Typography, Container, Grid, Paper } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import startImage from '../Assets/Images/dementiacaretaker.jpg';
+import startImage from '../Assets/Images/startImage.jpg';
 import '../Styles/register.css';
 
 const theme = createTheme({
@@ -68,7 +68,7 @@ function Start() {
                         marginBottom: '20px', 
                         fontWeight: 'bold' 
                     }}>
-                        Select Your Role
+                        
                     </Typography>
                     <Button 
                         variant="contained" 
@@ -81,7 +81,7 @@ function Start() {
                         }} 
                         onClick={goToPatient}
                     >
-                        Use as Patient
+                        Patient
                     </Button>
                     <Button 
                         variant="contained" 
@@ -94,7 +94,7 @@ function Start() {
                         }} 
                         onClick={goToCareTaker}
                     >
-                        Use as Care Taker
+                        Care Taker
                     </Button>
                 </Paper>
             </div>

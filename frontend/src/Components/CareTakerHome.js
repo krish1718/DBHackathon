@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../Styles/HomePage.css";
-import FeaturesImage1 from "../Assets/Images/startimage.png";
-import FeaturesImage2 from "../Assets/Images/startimage.png";
-import FeaturesImage3 from "../Assets/Images/startimage.png";
+import gif1 from "../Assets/Images/gif1.gif";
+import gif2 from "../Assets/Images/gif2.gif";
+import gif3 from "../Assets/Images/gif3.gif";
 import { Button } from "@mui/material";
 import NavigationDialog from "./NavigationDialog"; // Import the dialog component
 import { useNavigate } from 'react-router-dom';
@@ -58,7 +58,7 @@ const CareTakerHome = () => {
                 <div className="big-feature-section" >
                     <div className="big-feature-container" style={{  backgroundColor: '#edf6f9' }}>
                         <div className="feature-image">
-                            <img src={FeaturesImage1} alt="Patient Details"></img>
+                            <img src={gif1} alt="Patient Details"></img>
                         </div>
                         <div className="features-desc">
                             <h4>Patient Details</h4>
@@ -75,7 +75,7 @@ const CareTakerHome = () => {
                             <p>Learn more about Dementia.</p>
                         </div>
                         <div className="feature-image">
-                            <img src={FeaturesImage2} alt="More About Dementia"></img>
+                            <img src={gif2} alt="More About Dementia"></img>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ const CareTakerHome = () => {
                 <div className="big-feature-section" >
                     <div className="big-feature-container" style={{  backgroundColor: '#edf6f9' }}>
                         <div className="feature-image">
-                            <img src={FeaturesImage3} alt="Engage with the Community"></img>
+                            <img src={gif3} alt="Engage with the Community"></img>
                         </div>
                         <div className="features-desc">
                             <h4>Engage with the Community</h4>
