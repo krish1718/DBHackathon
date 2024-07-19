@@ -1,0 +1,32 @@
+html, body {
+  height: 100%; /* Ensure html and body elements take full height */
+  margin: 0; /* Remove default margin */
+}
+
+.GauravFullHeight {
+  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.GauravQuizOptions {
+  /* border: black solid 0.1px; */
+  border: none;
+  width: 200px;
+  max-height: 100px;
+  color: black;
+}
+
+.GauravImage {
+  max-height: 200px;
+}
+
+.GauravQuizContainer {
+  border: none;
+  background-image: url(../../public/personality-quiz.jpg);
+}
+
+.GauravQuizCard {
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 350px;
+}

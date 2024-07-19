@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+.body_Homepage{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+    padding: 0%;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Utility classes */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* Utility classes ends */
+
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+.primary-button-homepage{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease;
+    padding: 10px;
+    margin-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.primary-button-homepage:hover{
+    background-color: var(--accent-color-dark);
+}
+.secondary-button2{
+    border: solid var(--secondary-text-color);
+    border-width: 0.5px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    /* padding: 12px 24px; */
+    transition: 0.2s ease;
+    padding: 6px;
+    padding-left: 17px !important;
+    padding-right: 17px !important;
+} 
+.secondary-button2:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+} 
+
+/* header */
+
+header{
+    padding: 50px var(--padding-inline-section) 50px;
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 20px;
+}
+
+/* Features Section */
+
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    /* background-image: url(../images/assest40.svg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+.features-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.features-header h2{
+    margin-bottom: 20px;
+}
+.features-area{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+
+/* big features section */
+
+.body_Homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.feature-wrapper {
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    margin-bottom: 40px;
+}
+
+.feature-wrapper-right {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 40px;
+}
+
+.feature-link {
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    width: 100%;
+    max-width: 480px;
+}
+
+.right-curved {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.left-curved {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.big-feature-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.big-feature-container {
+    display: flex;
+    flex-direction: row; /* Ensure items are side-by-side */
+    align-items: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.feature-image img {
+    width: 100%;
+    max-width: 200px; /* Adjust to fit better on mobile */
+    border-radius: 10px;
+}
+
+.features-desc {
+    text-align: center;
+    margin-left: 20px; /* Add margin to separate text from image */
+}
+
+.features-desc h4 {
+    margin: 10px 0;
+}
+
+.features-desc p {
+    margin: 10px 0;
+}
+
+@media (min-width: 600px) {
+    .features-desc {
+        text-align: left;
+    }
+
+    .big-feature-container {
+        flex-direction: row; /* Keep items side-by-side on larger screens as well */
+    }
+}
+
+

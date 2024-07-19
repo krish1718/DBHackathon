@@ -1,0 +1,172 @@
+/* Add this to ensure the parent container is centered */
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Existing styles for #sagarka-main */
+#sagarka-main {
+  width: 800px;
+  padding: 50px 0;
+}
+
+/* Existing styles */
+#sagarka-main h1 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.sagarka-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sagarka-slide-row {
+  display: flex;
+  width: 3200px;
+  transition: transform 0.5s ease;
+}
+
+.sagarka-slide-col {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  flex-shrink: 0;
+}
+
+.sagarka-hero {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.sagarka-hero img {
+  height: 100%;
+  border-radius: 10px;
+  width: 320px;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+
+.sagarka-content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 520px;
+  height: 270px;
+  color: #4d4352;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  padding: 45px;
+  z-index: 2;
+  user-select: none;
+}
+
+.sagarka-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.sagarka-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 35px;
+  color: #4d4352;
+}
+
+.sagarka-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.sagarka-indicator .sagarka-btn {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  border-radius: 15px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.sagarka-btn.sagarka-active {
+  width: 30px;
+}
+
+@media (max-width: 850px) {
+  #sagarka-main {
+    width: 500px;
+  }
+
+  .sagarka-slide-row {
+    width: 2000px;
+  }
+
+  .sagarka-slide-col {
+    width: 500px;
+    height: 250px;
+  }
+
+  .sagarka-hero img {
+    width: 200px;
+  }
+
+  .sagarka-content {
+    width: 320px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  .sagarka-content p {
+    font-size: 0.8rem;
+  }
+
+  .sagarka-content h2 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  #sagarka-main {
+    width: 300px;
+  }
+
+  .sagarka-slide-row {
+    width: 1200px;
+  }
+
+  .sagarka-slide-col {
+    width: 300px;
+    height: 300px;
+  }
+
+  .sagarka-hero {
+    top: 60%;
+    height: 100px;
+    z-index: 5;
+  }
+
+  .sagarka-hero img {
+    width: 100px;
+  }
+
+  .sagarka-content {
+    width: 300px;
+  }
+}
